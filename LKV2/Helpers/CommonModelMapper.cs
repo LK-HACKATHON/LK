@@ -79,6 +79,7 @@ namespace LKV2.Helpers
                 {
                     response.Response.Directives.Add(directive);
                 }
+
                 response.Response.ShouldEndSession = false;
                 return response;
             }

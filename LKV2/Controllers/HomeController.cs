@@ -35,8 +35,11 @@ namespace LKV2.Controllers
                         case "HomeIntent":
                             commmonModel = Handlers.HomeIntent.Process(commmonModel);
                             break;
-                        case "ActivityIntent":
-                            commmonModel = Handlers.ActivityIntent.Process(commmonModel);
+                        case "PendingActivityIntent":
+                            commmonModel = Handlers.PendingAcivityIntent.Process(commmonModel);
+                            break;
+                        case "ScheduledActivityIntent":
+                            commmonModel = Handlers.ScheduledActivityIntent.Process(commmonModel);
                             break;
                         case "LeadCreationIntent":
                             commmonModel = Handlers.LeadCreationIntent.Process(commmonModel);

@@ -123,6 +123,7 @@
     <Compile Include="Controllers\ActivitiesController.cs" />
     <Compile Include="Controllers\AlexaController.cs" />
     <Compile Include="Controllers\ApiAiController.cs" />
+    <Compile Include="Controllers\HomeApiAiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Controllers\SayMatrixCareController.cs" />
@@ -137,9 +138,13 @@
     <Compile Include="Handlers\HelpIntent.cs" />
     <Compile Include="Handlers\HomeIntent.cs" />
     <Compile Include="Handlers\LeadCreationIntent.cs" />
+    <Compile Include="Handlers\PendingAcivityIntent.cs" />
+    <Compile Include="Handlers\ScheduledActivityIntent.cs" />
     <Compile Include="Handlers\WelcomeIntent.cs" />
+    <Compile Include="Helpers\ActivityHelper.cs" />
     <Compile Include="Helpers\CommonModelMapper.cs" />
     <Compile Include="Helpers\ErrorHelper.cs" />
+    <Compile Include="Helpers\LeadCreationHelper.cs" />
     <Compile Include="Helpers\MixedDateTimeConverter.cs" />
     <Compile Include="Models\Alexa\Request\Application.cs" />
     <Compile Include="Models\Alexa\Request\Context.cs" />

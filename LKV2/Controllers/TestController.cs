@@ -1,4 +1,5 @@
 ﻿using LKV2.Handlers;
+using LKV2.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,9 @@ namespace LKV2.Controllers
     {
         public string Get()
         {
-           var s= ActivityIntent.GetActivityResult();
-            return "Hello Alexa";
+            //var s = LeadCreationHelper.CreateLead("Gokul Kumer Alexa 1", "DEMO", "12/12/2017", "7262" ,"MC");
+            var s1 = ActivityHelper.GetPendingActivityResult();
+            return s1;
         }
     }
 }
